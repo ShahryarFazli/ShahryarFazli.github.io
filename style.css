@@ -173,21 +173,6 @@ h1{
   box-shadow: var(--shadow);
 }
 
-.photo-placeholder{
-  height: 320px;
-  border-radius: 18px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight: 650;
-  color: rgba(31,35,40,.65);
-  background:
-    radial-gradient(500px 250px at 30% 20%, rgba(124,58,237,.18), transparent 60%),
-    radial-gradient(450px 230px at 80% 30%, rgba(6,182,212,.18), transparent 60%),
-    rgba(255,255,255,.55);
-  border: 1px dashed rgba(31,35,40,.18);
-}
-
 .photo-note{
   margin: 10px 4px 0;
   font-size: 13px;
@@ -249,6 +234,31 @@ h1{
   border: 1px solid rgba(124,58,237,.18);
 }
 
+.pub-list{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pub{
+  display:block;
+  padding: 14px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.50);
+  border: 1px solid rgba(255,255,255,.45);
+  box-shadow: 0 12px 22px rgba(0,0,0,.08);
+}
+
+.pub-title{
+  font-weight: 750;
+  margin-bottom: 6px;
+}
+
+.pub-sub{
+  color: rgba(31,35,40,.72);
+  line-height: 1.45;
+}
+
 .footer{
   margin-top: 46px;
   padding-top: 18px;
@@ -261,8 +271,8 @@ h1{
   .hero-right{ justify-content:flex-start; }
   h1{ font-size: 44px; }
   .grid{ grid-template-columns: 1fr; }
+  .pub-list{ grid-template-columns: 1fr; }
 }
-
 
 .profile-img{
   width:100%;
@@ -271,4 +281,3 @@ h1{
   border-radius:18px;
   border: 1px solid rgba(255,255,255,.45);
 }
-
