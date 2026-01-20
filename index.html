@@ -1,18 +1,124 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shahryar Fazli | Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="text">
-      <h1>Shahryar Fazli</h1>
-      <p class="subtitle">PhD Candidate | GeoAI | Climate Extremes| Precision Agriculture  </p>
-      <button>Contact Me</button>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#home">Shahryar Fazli</a>
+
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#tools">Tools</a>
+        <a href="#story">Story</a>
+        <a href="#awards">Honors</a>
+        <a class="btn" href="#cv">Download CV</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main id="home" class="hero-wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Hi, I am</p>
+        <h1>Shahryar Fazli</h1>
+        <p class="role">PhD Candidate | GeoAI | Crop Yield Forecasting</p>
+
+        <div class="cta-row">
+          <a class="btn solid" href="mailto:sfazli@chapman.edu">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+          <a class="btn ghost" href="#projects">
+            View Projects
+          </a>
+        </div>
+
+        <div class="social">
+          <a class="icon" href="mailto:sfazli@chapman.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a class="icon" href="https://scholar.google.com/citations?user=PrqvVYEAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+          <a class="icon" href="https://www.linkedin.com/in/shahryar-fazli-094b17111" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="icon" href="https://github.com/ShahryarFazli" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="icon" href="https://www.researchgate.net/profile/Shahryar-Fazli" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-card">
+          <div class="photo-placeholder">
+            Add your photo here
+          </div>
+          <p class="photo-note">Next step: upload a professional headshot as <b>assets/profile.jpg</b></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+      <p class="muted">We will replace these cards with your real projects in the next step.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>CONUS Corn Yield Forecasting</h3>
+          <p>Deep learning and ML models combining climate, remote sensing, soils, and embeddings for county level yield prediction.</p>
+          <div class="tags">
+            <span>Deep Learning</span><span>Remote Sensing</span><span>Climate Extremes</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Compound and Cascading Climate Extremes</h3>
+          <p>Quantifying single, compound, and cascading events and linking them to agricultural resilience in the Central Valley.</p>
+          <div class="tags">
+            <span>Extreme Events</span><span>Risk</span><span>Resilience</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Crop Water Use Efficiency and Adaptation</h3>
+          <p>ML driven analysis of future water use efficiency and adaptive crop switching under CMIP6 climate scenarios.</p>
+          <div class="tags">
+            <span>CMIP6</span><span>WUE</span><span>Adaptation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Data Analytics Tools</h2>
+      <p class="muted">Add your key stack here later: Python, PyTorch, GEE, ArcGIS, SWAT, MODFLOW, etc.</p>
+    </section>
+
+    <section id="story" class="section">
+      <h2>My Story</h2>
+      <p class="muted">Keep this short. One paragraph maximum. We will write it after projects and CV are in place.</p>
+    </section>
+
+    <section id="awards" class="section">
+      <h2>Honors and Awards</h2>
+      <p class="muted">List only items that matter. Do not dump everything.</p>
+    </section>
+
+    <section id="cv" class="section">
+      <h2>Download CV</h2>
+      <p class="muted">Next step: upload your CV as <b>assets/Shahryar_Fazli_CV.pdf</b> and I will link it properly.</p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Shahryar Fazli</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
